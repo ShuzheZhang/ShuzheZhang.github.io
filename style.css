@@ -95,7 +95,7 @@ html, body { overflow-x: hidden; }   /* nothing should scroll the page sideways 
 .entry .meta { display: flex; flex-wrap: wrap; gap: 0.25rem 0.9rem; font-size: 0.76rem; color: var(--muted); }
 .entry .meta a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; }
 .entry .meta a:hover { color: var(--ink); }
-.entry .meta .meta-links { flex-basis: 100%; }   /* links drop to their own line, under the affiliation */
+.entry .meta .meta-links { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 0.25rem 0.9rem; }   /* own line; items spaced like the rest of the meta row */
 
 .entry.is-featured {
   background: var(--card); border: 1px solid var(--shadow); box-shadow: 3px 3px 0 var(--shadow);
