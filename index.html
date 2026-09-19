@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shuzhe Zhang</title>
+  <meta name="description" content="Shuzhe Zhang — M.S. student at Northwestern University working on robot co-design, dexterous manipulation, robot world models, and surgical manipulation.">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC03NS41MCA2Ni41MCA3Ni41MCI+PHBvbHlnb24gcG9pbnRzPSIwLjAwLC03MC4wMCAxMC4wMCwtNzAuMDAgMTQuNTAsLTc0LjUwIDQuNTAsLTc0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIxMC4wMCwtNjAuMDAgMTQuNTAsLTY0LjUwIDE0LjUwLC03NC41MCAxMC4wMCwtNzAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjAuMDAsLTYwLjAwIDEwLjAwLC02MC4wMCAxMC4wMCwtNzAuMDAgMC4wMCwtNzAuMDAiIGZpbGw9IiMxNDE0MTMiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjEwLjAwLC03MC4wMCAyMC4wMCwtNzAuMDAgMjQuNTAsLTc0LjUwIDE0LjUwLC03NC41MCIgZmlsbD0iIzhmOGQ4NCIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMjAuMDAsLTYwLjAwIDI0LjUwLC02NC41MCAyNC41MCwtNzQuNTAgMjAuMDAsLTcwLjAwIiBmaWxsPSIjM2QzYzM4IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIxMC4wMCwtNjAuMDAgMjAuMDAsLTYwLjAwIDIwLjAwLC03MC4wMCAxMC4wMCwtNzAuMDAiIGZpbGw9IiMxNDE0MTMiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjIwLjAwLC03MC4wMCAzMC4wMCwtNzAuMDAgMzQuNTAsLTc0LjUwIDI0LjUwLC03NC41MCIgZmlsbD0iIzhmOGQ4NCIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMzAuMDAsLTYwLjAwIDM0LjUwLC02NC41MCAzNC41MCwtNzQuNTAgMzAuMDAsLTcwLjAwIiBmaWxsPSIjM2QzYzM4IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIyMC4wMCwtNjAuMDAgMzAuMDAsLTYwLjAwIDMwLjAwLC03MC4wMCAyMC4wMCwtNzAuMDAiIGZpbGw9IiMxNDE0MTMiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjMwLjAwLC03MC4wMCA0MC4wMCwtNzAuMDAgNDQuNTAsLTc0LjUwIDM0LjUwLC03NC41MCIgZmlsbD0iIzhmOGQ4NCIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iNDAuMDAsLTYwLjAwIDQ0LjUwLC02NC41MCA0NC41MCwtNzQuNTAgNDAuMDAsLTcwLjAwIiBmaWxsPSIjM2QzYzM4IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIzMC4wMCwtNjAuMDAgNDAuMDAsLTYwLjAwIDQwLjAwLC03MC4wMCAzMC4wMCwtNzAuMDAiIGZpbGw9IiMxNDE0MTMiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjQwLjAwLC03MC4wMCA1MC4wMCwtNzAuMDAgNTQuNTAsLTc0LjUwIDQ0LjUwLC03NC41MCIgZmlsbD0iIzhmOGQ4NCIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iNTAuMDAsLTYwLjAwIDU0LjUwLC02NC41MCA1NC41MCwtNzQuNTAgNTAuMDAsLTcwLjAwIiBmaWxsPSIjM2QzYzM4IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI0MC4wMCwtNjAuMDAgNTAuMDAsLTYwLjAwIDUwLjAwLC03MC4wMCA0MC4wMCwtNzAuMDAiIGZpbGw9IiMxNDE0MTMiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjUwLjAwLC03MC4wMCA2MC4wMCwtNzAuMDAgNjQuNTAsLTc0LjUwIDU0LjUwLC03NC41MCIgZmlsbD0iIzhmOGQ4NCIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iNjAuMDAsLTYwLjAwIDY0LjUwLC02NC41MCA2NC41MCwtNzQuNTAgNjAuMDAsLTcwLjAwIiBmaWxsPSIjM2QzYzM4IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI1MC4wMCwtNjAuMDAgNjAuMDAsLTYwLjAwIDYwLjAwLC03MC4wMCA1MC4wMCwtNzAuMDAiIGZpbGw9IiMxNDE0MTMiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjAuMDAsLTYwLjAwIDEwLjAwLC02MC4wMCAxNC41MCwtNjQuNTAgNC41MCwtNjQuNTAiIGZpbGw9IiM4ZjhkODQiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjEwLjAwLC01MC4wMCAxNC41MCwtNTQuNTAgMTQuNTAsLTY0LjUwIDEwLjAwLC02MC4wMCIgZmlsbD0iIzNkM2MzOCIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMC4wMCwtNTAuMDAgMTAuMDAsLTUwLjAwIDEwLjAwLC02MC4wMCAwLjAwLC02MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMTAuMDAsLTYwLjAwIDIwLjAwLC02MC4wMCAyNC41MCwtNjQuNTAgMTQuNTAsLTY0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIyMC4wMCwtNTAuMDAgMjQuNTAsLTU0LjUwIDI0LjUwLC02NC41MCAyMC4wMCwtNjAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjEwLjAwLC01MC4wMCAyMC4wMCwtNTAuMDAgMjAuMDAsLTYwLjAwIDEwLjAwLC02MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMjAuMDAsLTYwLjAwIDMwLjAwLC02MC4wMCAzNC41MCwtNjQuNTAgMjQuNTAsLTY0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIzMC4wMCwtNTAuMDAgMzQuNTAsLTU0LjUwIDM0LjUwLC02NC41MCAzMC4wMCwtNjAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjIwLjAwLC01MC4wMCAzMC4wMCwtNTAuMDAgMzAuMDAsLTYwLjAwIDIwLjAwLC02MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMzAuMDAsLTYwLjAwIDQwLjAwLC02MC4wMCA0NC41MCwtNjQuNTAgMzQuNTAsLTY0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI0MC4wMCwtNTAuMDAgNDQuNTAsLTU0LjUwIDQ0LjUwLC02NC41MCA0MC4wMCwtNjAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjMwLjAwLC01MC4wMCA0MC4wMCwtNTAuMDAgNDAuMDAsLTYwLjAwIDMwLjAwLC02MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iNDAuMDAsLTYwLjAwIDUwLjAwLC02MC4wMCA1NC41MCwtNjQuNTAgNDQuNTAsLTY0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI1MC4wMCwtNTAuMDAgNTQuNTAsLTU0LjUwIDU0LjUwLC02NC41MCA1MC4wMCwtNjAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjQwLjAwLC01MC4wMCA1MC4wMCwtNTAuMDAgNTAuMDAsLTYwLjAwIDQwLjAwLC02MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iNTAuMDAsLTYwLjAwIDYwLjAwLC02MC4wMCA2NC41MCwtNjQuNTAgNTQuNTAsLTY0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI2MC4wMCwtNTAuMDAgNjQuNTAsLTU0LjUwIDY0LjUwLC02NC41MCA2MC4wMCwtNjAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjUwLjAwLC01MC4wMCA2MC4wMCwtNTAuMDAgNjAuMDAsLTYwLjAwIDUwLjAwLC02MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iNDAuMDAsLTUwLjAwIDUwLjAwLC01MC4wMCA1NC41MCwtNTQuNTAgNDQuNTAsLTU0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI1MC4wMCwtNDAuMDAgNTQuNTAsLTQ0LjUwIDU0LjUwLC01NC41MCA1MC4wMCwtNTAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjQwLjAwLC00MC4wMCA1MC4wMCwtNDAuMDAgNTAuMDAsLTUwLjAwIDQwLjAwLC01MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iNTAuMDAsLTUwLjAwIDYwLjAwLC01MC4wMCA2NC41MCwtNTQuNTAgNTQuNTAsLTU0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI2MC4wMCwtNDAuMDAgNjQuNTAsLTQ0LjUwIDY0LjUwLC01NC41MCA2MC4wMCwtNTAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjUwLjAwLC00MC4wMCA2MC4wMCwtNDAuMDAgNjAuMDAsLTUwLjAwIDUwLjAwLC01MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMzAuMDAsLTQwLjAwIDQwLjAwLC00MC4wMCA0NC41MCwtNDQuNTAgMzQuNTAsLTQ0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI0MC4wMCwtMzAuMDAgNDQuNTAsLTM0LjUwIDQ0LjUwLC00NC41MCA0MC4wMCwtNDAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjMwLjAwLC0zMC4wMCA0MC4wMCwtMzAuMDAgNDAuMDAsLTQwLjAwIDMwLjAwLC00MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iNDAuMDAsLTQwLjAwIDUwLjAwLC00MC4wMCA1NC41MCwtNDQuNTAgNDQuNTAsLTQ0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI1MC4wMCwtMzAuMDAgNTQuNTAsLTM0LjUwIDU0LjUwLC00NC41MCA1MC4wMCwtNDAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjQwLjAwLC0zMC4wMCA1MC4wMCwtMzAuMDAgNTAuMDAsLTQwLjAwIDQwLjAwLC00MC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMjAuMDAsLTMwLjAwIDMwLjAwLC0zMC4wMCAzNC41MCwtMzQuNTAgMjQuNTAsLTM0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIzMC4wMCwtMjAuMDAgMzQuNTAsLTI0LjUwIDM0LjUwLC0zNC41MCAzMC4wMCwtMzAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjIwLjAwLC0yMC4wMCAzMC4wMCwtMjAuMDAgMzAuMDAsLTMwLjAwIDIwLjAwLC0zMC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMzAuMDAsLTMwLjAwIDQwLjAwLC0zMC4wMCA0NC41MCwtMzQuNTAgMzQuNTAsLTM0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI0MC4wMCwtMjAuMDAgNDQuNTAsLTI0LjUwIDQ0LjUwLC0zNC41MCA0MC4wMCwtMzAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjMwLjAwLC0yMC4wMCA0MC4wMCwtMjAuMDAgNDAuMDAsLTMwLjAwIDMwLjAwLC0zMC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMjAuMDAsLTIwLjAwIDMwLjAwLC0yMC4wMCAzNC41MCwtMjQuNTAgMjQuNTAsLTI0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIzMC4wMCwtMTAuMDAgMzQuNTAsLTE0LjUwIDM0LjUwLC0yNC41MCAzMC4wMCwtMjAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjIwLjAwLC0xMC4wMCAzMC4wMCwtMTAuMDAgMzAuMDAsLTIwLjAwIDIwLjAwLC0yMC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMzAuMDAsLTIwLjAwIDQwLjAwLC0yMC4wMCA0NC41MCwtMjQuNTAgMzQuNTAsLTI0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSI0MC4wMCwtMTAuMDAgNDQuNTAsLTE0LjUwIDQ0LjUwLC0yNC41MCA0MC4wMCwtMjAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjMwLjAwLC0xMC4wMCA0MC4wMCwtMTAuMDAgNDAuMDAsLTIwLjAwIDMwLjAwLC0yMC4wMCIgZmlsbD0iIzE0MTQxMyIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMjAuMDAsLTEwLjAwIDMwLjAwLC0xMC4wMCAzNC41MCwtMTQuNTAgMjQuNTAsLTE0LjUwIiBmaWxsPSIjOGY4ZDg0IiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIzMC4wMCwwLjAwIDM0LjUwLC00LjUwIDM0LjUwLC0xNC41MCAzMC4wMCwtMTAuMDAiIGZpbGw9IiMzZDNjMzgiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjIwLjAwLDAuMDAgMzAuMDAsMC4wMCAzMC4wMCwtMTAuMDAgMjAuMDAsLTEwLjAwIiBmaWxsPSIjMTQxNDEzIiBzdHJva2U9IiNmNWY0ZWYiIHN0cm9rZS13aWR0aD0iMC42IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBvbHlnb24gcG9pbnRzPSIzMC4wMCwtMTAuMDAgNDAuMDAsLTEwLjAwIDQ0LjUwLC0xNC41MCAzNC41MCwtMTQuNTAiIGZpbGw9IiM4ZjhkODQiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjQwLjAwLDAuMDAgNDQuNTAsLTQuNTAgNDQuNTAsLTE0LjUwIDQwLjAwLC0xMC4wMCIgZmlsbD0iIzNkM2MzOCIgc3Ryb2tlPSIjZjVmNGVmIiBzdHJva2Utd2lkdGg9IjAuNiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMzAuMDAsMC4wMCA0MC4wMCwwLjAwIDQwLjAwLC0xMC4wMCAzMC4wMCwtMTAuMDAiIGZpbGw9IiMxNDE0MTMiIHN0cm9rZT0iI2Y1ZjRlZiIgc3Ryb2tlLXdpZHRoPSIwLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shuzhe Zhang">
+  <meta property="og:title" content="Shuzhe Zhang">
+  <meta property="og:description" content="M.S. student at Northwestern working on robot co-design, dexterous manipulation, robot world models and surgical manipulation.">
+  <meta property="og:image" content="https://shuzhezhang.com/research/s2-hwm/media/pegtransfer_blender_poster.jpg">
+  <meta property="og:url" content="https://shuzhezhang.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="topbar">
+    <a class="wordmark" href="/"><svg class="mark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -75.50 66.50 76.50"><polygon points="0.00,-70.00 10.00,-70.00 14.50,-74.50 4.50,-74.50" class="f-top"/><polygon points="10.00,-60.00 14.50,-64.50 14.50,-74.50 10.00,-70.00" class="f-right"/><polygon points="0.00,-60.00 10.00,-60.00 10.00,-70.00 0.00,-70.00" class="f-left"/><polygon points="10.00,-70.00 20.00,-70.00 24.50,-74.50 14.50,-74.50" class="f-top"/><polygon points="20.00,-60.00 24.50,-64.50 24.50,-74.50 20.00,-70.00" class="f-right"/><polygon points="10.00,-60.00 20.00,-60.00 20.00,-70.00 10.00,-70.00" class="f-left"/><polygon points="20.00,-70.00 30.00,-70.00 34.50,-74.50 24.50,-74.50" class="f-top"/><polygon points="30.00,-60.00 34.50,-64.50 34.50,-74.50 30.00,-70.00" class="f-right"/><polygon points="20.00,-60.00 30.00,-60.00 30.00,-70.00 20.00,-70.00" class="f-left"/><polygon points="30.00,-70.00 40.00,-70.00 44.50,-74.50 34.50,-74.50" class="f-top"/><polygon points="40.00,-60.00 44.50,-64.50 44.50,-74.50 40.00,-70.00" class="f-right"/><polygon points="30.00,-60.00 40.00,-60.00 40.00,-70.00 30.00,-70.00" class="f-left"/><polygon points="40.00,-70.00 50.00,-70.00 54.50,-74.50 44.50,-74.50" class="f-top"/><polygon points="50.00,-60.00 54.50,-64.50 54.50,-74.50 50.00,-70.00" class="f-right"/><polygon points="40.00,-60.00 50.00,-60.00 50.00,-70.00 40.00,-70.00" class="f-left"/><polygon points="50.00,-70.00 60.00,-70.00 64.50,-74.50 54.50,-74.50" class="f-top"/><polygon points="60.00,-60.00 64.50,-64.50 64.50,-74.50 60.00,-70.00" class="f-right"/><polygon points="50.00,-60.00 60.00,-60.00 60.00,-70.00 50.00,-70.00" class="f-left"/><polygon points="0.00,-60.00 10.00,-60.00 14.50,-64.50 4.50,-64.50" class="f-top"/><polygon points="10.00,-50.00 14.50,-54.50 14.50,-64.50 10.00,-60.00" class="f-right"/><polygon points="0.00,-50.00 10.00,-50.00 10.00,-60.00 0.00,-60.00" class="f-left"/><polygon points="10.00,-60.00 20.00,-60.00 24.50,-64.50 14.50,-64.50" class="f-top"/><polygon points="20.00,-50.00 24.50,-54.50 24.50,-64.50 20.00,-60.00" class="f-right"/><polygon points="10.00,-50.00 20.00,-50.00 20.00,-60.00 10.00,-60.00" class="f-left"/><polygon points="20.00,-60.00 30.00,-60.00 34.50,-64.50 24.50,-64.50" class="f-top"/><polygon points="30.00,-50.00 34.50,-54.50 34.50,-64.50 30.00,-60.00" class="f-right"/><polygon points="20.00,-50.00 30.00,-50.00 30.00,-60.00 20.00,-60.00" class="f-left"/><polygon points="30.00,-60.00 40.00,-60.00 44.50,-64.50 34.50,-64.50" class="f-top"/><polygon points="40.00,-50.00 44.50,-54.50 44.50,-64.50 40.00,-60.00" class="f-right"/><polygon points="30.00,-50.00 40.00,-50.00 40.00,-60.00 30.00,-60.00" class="f-left"/><polygon points="40.00,-60.00 50.00,-60.00 54.50,-64.50 44.50,-64.50" class="f-top"/><polygon points="50.00,-50.00 54.50,-54.50 54.50,-64.50 50.00,-60.00" class="f-right"/><polygon points="40.00,-50.00 50.00,-50.00 50.00,-60.00 40.00,-60.00" class="f-left"/><polygon points="50.00,-60.00 60.00,-60.00 64.50,-64.50 54.50,-64.50" class="f-top"/><polygon points="60.00,-50.00 64.50,-54.50 64.50,-64.50 60.00,-60.00" class="f-right"/><polygon points="50.00,-50.00 60.00,-50.00 60.00,-60.00 50.00,-60.00" class="f-left"/><polygon points="40.00,-50.00 50.00,-50.00 54.50,-54.50 44.50,-54.50" class="f-top"/><polygon points="50.00,-40.00 54.50,-44.50 54.50,-54.50 50.00,-50.00" class="f-right"/><polygon points="40.00,-40.00 50.00,-40.00 50.00,-50.00 40.00,-50.00" class="f-left"/><polygon points="50.00,-50.00 60.00,-50.00 64.50,-54.50 54.50,-54.50" class="f-top"/><polygon points="60.00,-40.00 64.50,-44.50 64.50,-54.50 60.00,-50.00" class="f-right"/><polygon points="50.00,-40.00 60.00,-40.00 60.00,-50.00 50.00,-50.00" class="f-left"/><polygon points="30.00,-40.00 40.00,-40.00 44.50,-44.50 34.50,-44.50" class="f-top"/><polygon points="40.00,-30.00 44.50,-34.50 44.50,-44.50 40.00,-40.00" class="f-right"/><polygon points="30.00,-30.00 40.00,-30.00 40.00,-40.00 30.00,-40.00" class="f-left"/><polygon points="40.00,-40.00 50.00,-40.00 54.50,-44.50 44.50,-44.50" class="f-top"/><polygon points="50.00,-30.00 54.50,-34.50 54.50,-44.50 50.00,-40.00" class="f-right"/><polygon points="40.00,-30.00 50.00,-30.00 50.00,-40.00 40.00,-40.00" class="f-left"/><polygon points="20.00,-30.00 30.00,-30.00 34.50,-34.50 24.50,-34.50" class="f-top"/><polygon points="30.00,-20.00 34.50,-24.50 34.50,-34.50 30.00,-30.00" class="f-right"/><polygon points="20.00,-20.00 30.00,-20.00 30.00,-30.00 20.00,-30.00" class="f-left"/><polygon points="30.00,-30.00 40.00,-30.00 44.50,-34.50 34.50,-34.50" class="f-top"/><polygon points="40.00,-20.00 44.50,-24.50 44.50,-34.50 40.00,-30.00" class="f-right"/><polygon points="30.00,-20.00 40.00,-20.00 40.00,-30.00 30.00,-30.00" class="f-left"/><polygon points="20.00,-20.00 30.00,-20.00 34.50,-24.50 24.50,-24.50" class="f-top"/><polygon points="30.00,-10.00 34.50,-14.50 34.50,-24.50 30.00,-20.00" class="f-right"/><polygon points="20.00,-10.00 30.00,-10.00 30.00,-20.00 20.00,-20.00" class="f-left"/><polygon points="30.00,-20.00 40.00,-20.00 44.50,-24.50 34.50,-24.50" class="f-top"/><polygon points="40.00,-10.00 44.50,-14.50 44.50,-24.50 40.00,-20.00" class="f-right"/><polygon points="30.00,-10.00 40.00,-10.00 40.00,-20.00 30.00,-20.00" class="f-left"/><polygon points="20.00,-10.00 30.00,-10.00 34.50,-14.50 24.50,-14.50" class="f-top"/><polygon points="30.00,0.00 34.50,-4.50 34.50,-14.50 30.00,-10.00" class="f-right"/><polygon points="20.00,0.00 30.00,0.00 30.00,-10.00 20.00,-10.00" class="f-left"/><polygon points="30.00,-10.00 40.00,-10.00 44.50,-14.50 34.50,-14.50" class="f-top"/><polygon points="40.00,0.00 44.50,-4.50 44.50,-14.50 40.00,-10.00" class="f-right"/><polygon points="30.00,0.00 40.00,0.00 40.00,-10.00 30.00,-10.00" class="f-left"/></svg>Shuzhe Zhang</a>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="https://scholar.google.com/citations?user=uV5fnogAAAAJ">Google Scholar</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <img class="avatar" src="assets/placeholders/avatar.svg" alt="Shuzhe Zhang">
+    <div>
+      <p>I am an M.S. student in Electrical Engineering at Northwestern University, in the Robotics and Autonomous Systems specialization, advised by <a class="link" href="https://skriegman.github.io/sam.html">Sam Kriegman</a> in the <a class="link" href="https://www.xenobot.group">Xenobot Lab</a>. I am also a research intern in the HCI Lab at SIAT, Chinese Academy of Sciences, advised by <a class="link" href="https://people.ucas.ac.cn/~qianyinling">Yinling Qian</a>.</p>
+      <p>My research focuses on robot manipulation, particularly dexterous manipulation. I currently work on the co-design of dexterous robot hand morphology and control, with an emphasis on bringing these designs to real hardware. I am also studying world models for precise, long-horizon manipulation, with the goal of learning dynamics and higher-level task structures that support more effective modeling and planning of complex manipulation processes. In the long term, I hope to further explore the relationships among robot morphology, dynamics, and control, and contribute to more general and dexterous robotic manipulation.</p>
+    </div>
+  </section>
+
+  <section class="section" id="research">
+    <h2>Research</h2>
+    <ol class="timeline">
+
+      <li class="entry is-featured">
+        <div class="row">
+          <span class="title">Evolving Dexterous Robots from Scratch</span>
+          <span class="when">2026</span>
+        </div>
+        <div class="entry-main">
+          <span class="thumb">
+            <img src="assets/thumbs/evohand.jpg" alt="Five evolved manipulators built on Dynamixel servos, shown with the household objects they are trained to grasp">
+          </span>
+          <div class="entry-text">
+            <p class="desc">Robot co-design for dexterous manipulation. SPaCE, a spherical-projection autoencoder trained with contrastive learning, embeds two million voxel-grown manipulators on a unit hypersphere; hands are evolved in that latent space, trained in Isaac Lab, built on Dynamixel servos, and fine-tuned on the physical hand.</p>
+            <div class="meta"><span class="meta-links">In preparation</span></div>
+          </div>
+        </div>
+      </li>
+
+      <li class="entry is-featured">
+        <div class="row">
+          <a class="title" href="research/s2-hwm/">S²-HWM: a Hierarchical World Model for Long-Horizon Surgical Manipulation</a>
+          <span class="when">Aug 2026</span>
+        </div>
+        <div class="entry-main">
+          <a class="thumb" href="research/s2-hwm/" tabindex="-1" aria-hidden="true">
+            <video src="assets/thumbs/s2hwm_loop.mp4" poster="assets/thumbs/s2hwm_loop.jpg"
+                   autoplay loop muted playsinline preload="metadata"></video>
+          </a>
+          <div class="entry-text">
+            <p class="desc">A hierarchical world model that learns a few task events from latent dynamics and plans over them rather than primitive steps. 98.7% success on SurRoL PegTransfer, against 76.0% for a flat DreamerV3.</p>
+            <div class="meta"><span class="meta-links">Under review · <a href="https://arxiv.org/abs/2608.13103">arXiv</a> · Poster at <a href="https://sites.google.com/view/iros-elsr-2026/home">ELSR Workshop, IROS 2026</a></span></div>
+          </div>
+        </div>
+      </li>
+
+      <li class="entry is-featured">
+        <div class="row">
+          <span class="title">Creating Manufacturable Blueprints for Coarse-Grained Virtual Robots</span>
+          <span class="when">Mar 2026</span>
+        </div>
+        <p class="desc">A four-stage pipeline that converts evolved virtual robots into manufacturable, assembly-ready blueprints. Across 1,000 sampled designs 67% passed every solver stage, and an evolved tripedal design walked zero-shot off the printer.</p>
+        <div class="meta"><span class="meta-links">Under review · <a href="https://arxiv.org/abs/2603.13582">arXiv</a> · Poster at <a href="https://sites.google.com/view/robot-codesign-iros">Co-Design Workshop, IROS 2026</a></span></div>
+      </li>
+
+      <li class="entry">
+        <div class="row">
+          <a class="title" href="research/osteotomy/">Constraint-Aware Bone Tumor Osteotomy Planning</a>
+          <span class="when">2025</span>
+        </div>
+        <p class="desc">Constraint-aware deep learning that automates pelvic bone-tumor resection planning with guaranteed margins. 100% target-margin coverage on 20 clinical cases, against 93.3% for geometry-only ranking.</p>
+      </li>
+
+      <li class="entry">
+        <div class="row">
+          <span class="title">Shared-Control Evaluation for Powered Wheelchairs</span>
+          <span class="when">Sep – Dec 2025</span>
+        </div>
+        <p class="desc">User studies of REACT, a shared-control driving-assistance system on a LUCI-equipped powered wheelchair. Ran the sessions of an IRB-approved study and kept the wheelchair's ROS 2 stack reliable across them.</p>
+        <div class="meta"><span class="meta-links">Part of <a href="https://www.sralab.org/articles/news/nsf-awards-5-million-dr-brenna-argall-led-project-develop-power-wheelchair-driver-assist-technology">Project DRIVE</a></span></div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="section" id="publications">
+    <h2>Publications</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <span class="ptitle">S²-HWM: Sparse Event-Structured Hierarchical World Model for Long-Horizon Surgical Robot Manipulation</span>
+        <span class="authors"><span class="me">S. Zhang</span>, X. Zhu, Y. Qian, Q. Wang</span><br>
+        <span class="venue">Under review · <a href="https://arxiv.org/abs/2608.13103">arXiv:2608.13103</a> · <a href="research/s2-hwm/">Project page</a> · Poster at the <a href="https://sites.google.com/view/iros-elsr-2026/home">ELSR Workshop, IROS 2026</a></span>
+      </li>
+      <li class="pub">
+        <span class="ptitle">Creating Manufacturable Blueprints for Coarse-Grained Virtual Robots</span>
+        <span class="authors">Z. Guo, M. Li, <span class="me">S. Zhang</span>, S. Kriegman</span><br>
+        <span class="venue">Under review · <a href="https://arxiv.org/abs/2603.13582">arXiv:2603.13582</a> · Poster at the <a href="https://sites.google.com/view/robot-codesign-iros">Co-Design Workshop, IROS 2026</a></span>
+      </li>
+      <li class="pub">
+        <span class="ptitle">Evolving Dexterous Robots from Scratch</span>
+        <span class="authors">Z. Guo*, <span class="me">S. Zhang*</span>, B. Li, M. Li, S. Kriegman</span><br>
+        <span class="venue">In preparation · *equal contribution</span>
+      </li>
+      <li class="pub">
+        <span class="ptitle">USD-YOLO: An Enhanced YOLO Algorithm for Small Object Detection in Unmanned Systems Perception</span>
+        <span class="authors">H. Deng, <span class="me">S. Zhang</span>, X. Wang, T. Han, Y. Ye</span><br>
+        <span class="venue"><em>Applied Sciences</em> 15(7):3795, 2025 · <a href="https://doi.org/10.3390/app15073795">DOI</a></span>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" id="experience">
+    <h2>Research experience</h2>
+    <ul class="orgs">
+      <li class="org">
+        <a class="org-logo" href="https://www.xenobot.group"><img src="assets/logos/xenobot.png" alt="Xenobot Lab"></a>
+        <div class="org-body">
+          <div class="row">
+            <span class="org-name">Xenobot Lab, Northwestern University</span>
+            <span class="when">Dec 2025 – present</span>
+          </div>
+          <p class="desc">Research Assistant · Advisor: <a href="https://skriegman.github.io/sam.html">Sam Kriegman</a></p>
+        </div>
+      </li>
+      <li class="org">
+        <a class="org-logo" href="https://www.sralab.org"><img src="assets/logos/sralab.svg" alt="Shirley Ryan AbilityLab"></a>
+        <div class="org-body">
+          <div class="row">
+            <span class="org-name">argallab, Northwestern University &amp; Shirley Ryan AbilityLab</span>
+            <span class="when">Sep – Dec 2025</span>
+          </div>
+          <p class="desc">Research Assistant · Advisor: <a href="https://www.argallab.northwestern.edu/people/brenna/">Brenna Argall</a></p>
+        </div>
+      </li>
+      <li class="org">
+        <a class="org-logo" href="https://www.siat.ac.cn"><img src="assets/logos/siat.png" alt="SIAT, Chinese Academy of Sciences"></a>
+        <div class="org-body">
+          <div class="row">
+            <span class="org-name">HCI Lab, Shenzhen Institutes of Advanced Technology, CAS</span>
+            <span class="when">Dec 2024 – present</span>
+          </div>
+          <p class="desc">Research Intern · Advisor: <a href="https://people.ucas.ac.cn/~qianyinling">Yinling Qian</a></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p class="wordmark">Shuzhe Zhang</p>
+  </footer>
+
+</div>
+<script>
+if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('.thumb video').forEach(function (v) { v.autoplay = false; v.pause(); });
+}
+</script>
+</body>
+</html>
