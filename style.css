@@ -106,7 +106,7 @@ html, body { overflow-x: hidden; }   /* nothing should scroll the page sideways 
 
 /* ---------- Card thumbnail ---------- */
 .entry-main { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 0.95rem; align-items: start; }
-.entry-text { display: flex; flex-direction: column; gap: 0.25rem; min-width: 0; }
+.entry-text { display: flex; flex-direction: column; gap: 0.55rem; min-width: 0; }   /* keep the meta block off the description */
 .thumb { display: block; overflow: hidden; border: 1px solid var(--divider); border-radius: 5px; background: var(--paper); }
 .thumb video, .thumb img { display: block; width: 100%; height: auto; border-radius: 4px; }   /* Safari clips video by its own radius, not the parent's */
 @media (prefers-color-scheme: dark) {
