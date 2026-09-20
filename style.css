@@ -67,7 +67,7 @@ html, body { overflow-x: hidden; }   /* nothing should scroll the page sideways 
 
 /* ---------- Intro ---------- */
 .intro { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 1.5rem; align-items: start; margin-bottom: 2.5rem; }
-.avatar { width: 5rem; height: 5rem; border-radius: 999px; object-fit: cover; }   /* height must be explicit: the img width/height attributes would otherwise set it */
+.avatar { width: 5rem; height: 5rem; border-radius: 999px; object-fit: cover; border: 1px solid var(--divider); }   /* height must be explicit: the img width/height attributes would otherwise set it */
 .intro p { margin: 0 0 0.7rem; color: var(--ink-soft); }
 .intro p:last-child { margin-bottom: 0; }
 
