@@ -19,7 +19,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page">
+  <div class="hero-wrap">
+  <section class="video-rail" aria-hidden="true">
+    <video id="hero-video" poster="assets/hero/hands_loop.jpg" autoplay muted loop playsinline preload="metadata"></video>
+    <div class="video-scrim"></div>
+  </section>
+  <section class="hero-intro">
+    <h1 class="hero-name">Shuzhe Zhang</h1>
+    <p class="hero-lede">My research focuses on robot manipulation, particularly dexterous manipulation.</p>
+    <p class="hero-cap" id="hero-cap" aria-live="polite"></p>
+  </section>
+  </div>
+
+<div class="page content-column">
 
   <header class="topbar">
     <a class="wordmark" href="/"><svg class="mark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -75.50 66.50 76.50"><polygon points="0.00,-70.00 10.00,-70.00 14.50,-74.50 4.50,-74.50" class="f-top"/><polygon points="10.00,-60.00 14.50,-64.50 14.50,-74.50 10.00,-70.00" class="f-right"/><polygon points="0.00,-60.00 10.00,-60.00 10.00,-70.00 0.00,-70.00" class="f-left"/><polygon points="10.00,-70.00 20.00,-70.00 24.50,-74.50 14.50,-74.50" class="f-top"/><polygon points="20.00,-60.00 24.50,-64.50 24.50,-74.50 20.00,-70.00" class="f-right"/><polygon points="10.00,-60.00 20.00,-60.00 20.00,-70.00 10.00,-70.00" class="f-left"/><polygon points="20.00,-70.00 30.00,-70.00 34.50,-74.50 24.50,-74.50" class="f-top"/><polygon points="30.00,-60.00 34.50,-64.50 34.50,-74.50 30.00,-70.00" class="f-right"/><polygon points="20.00,-60.00 30.00,-60.00 30.00,-70.00 20.00,-70.00" class="f-left"/><polygon points="30.00,-70.00 40.00,-70.00 44.50,-74.50 34.50,-74.50" class="f-top"/><polygon points="40.00,-60.00 44.50,-64.50 44.50,-74.50 40.00,-70.00" class="f-right"/><polygon points="30.00,-60.00 40.00,-60.00 40.00,-70.00 30.00,-70.00" class="f-left"/><polygon points="40.00,-70.00 50.00,-70.00 54.50,-74.50 44.50,-74.50" class="f-top"/><polygon points="50.00,-60.00 54.50,-64.50 54.50,-74.50 50.00,-70.00" class="f-right"/><polygon points="40.00,-60.00 50.00,-60.00 50.00,-70.00 40.00,-70.00" class="f-left"/><polygon points="50.00,-70.00 60.00,-70.00 64.50,-74.50 54.50,-74.50" class="f-top"/><polygon points="60.00,-60.00 64.50,-64.50 64.50,-74.50 60.00,-70.00" class="f-right"/><polygon points="50.00,-60.00 60.00,-60.00 60.00,-70.00 50.00,-70.00" class="f-left"/><polygon points="0.00,-60.00 10.00,-60.00 14.50,-64.50 4.50,-64.50" class="f-top"/><polygon points="10.00,-50.00 14.50,-54.50 14.50,-64.50 10.00,-60.00" class="f-right"/><polygon points="0.00,-50.00 10.00,-50.00 10.00,-60.00 0.00,-60.00" class="f-left"/><polygon points="10.00,-60.00 20.00,-60.00 24.50,-64.50 14.50,-64.50" class="f-top"/><polygon points="20.00,-50.00 24.50,-54.50 24.50,-64.50 20.00,-60.00" class="f-right"/><polygon points="10.00,-50.00 20.00,-50.00 20.00,-60.00 10.00,-60.00" class="f-left"/><polygon points="20.00,-60.00 30.00,-60.00 34.50,-64.50 24.50,-64.50" class="f-top"/><polygon points="30.00,-50.00 34.50,-54.50 34.50,-64.50 30.00,-60.00" class="f-right"/><polygon points="20.00,-50.00 30.00,-50.00 30.00,-60.00 20.00,-60.00" class="f-left"/><polygon points="30.00,-60.00 40.00,-60.00 44.50,-64.50 34.50,-64.50" class="f-top"/><polygon points="40.00,-50.00 44.50,-54.50 44.50,-64.50 40.00,-60.00" class="f-right"/><polygon points="30.00,-50.00 40.00,-50.00 40.00,-60.00 30.00,-60.00" class="f-left"/><polygon points="40.00,-60.00 50.00,-60.00 54.50,-64.50 44.50,-64.50" class="f-top"/><polygon points="50.00,-50.00 54.50,-54.50 54.50,-64.50 50.00,-60.00" class="f-right"/><polygon points="40.00,-50.00 50.00,-50.00 50.00,-60.00 40.00,-60.00" class="f-left"/><polygon points="50.00,-60.00 60.00,-60.00 64.50,-64.50 54.50,-64.50" class="f-top"/><polygon points="60.00,-50.00 64.50,-54.50 64.50,-64.50 60.00,-60.00" class="f-right"/><polygon points="50.00,-50.00 60.00,-50.00 60.00,-60.00 50.00,-60.00" class="f-left"/><polygon points="40.00,-50.00 50.00,-50.00 54.50,-54.50 44.50,-54.50" class="f-top"/><polygon points="50.00,-40.00 54.50,-44.50 54.50,-54.50 50.00,-50.00" class="f-right"/><polygon points="40.00,-40.00 50.00,-40.00 50.00,-50.00 40.00,-50.00" class="f-left"/><polygon points="50.00,-50.00 60.00,-50.00 64.50,-54.50 54.50,-54.50" class="f-top"/><polygon points="60.00,-40.00 64.50,-44.50 64.50,-54.50 60.00,-50.00" class="f-right"/><polygon points="50.00,-40.00 60.00,-40.00 60.00,-50.00 50.00,-50.00" class="f-left"/><polygon points="30.00,-40.00 40.00,-40.00 44.50,-44.50 34.50,-44.50" class="f-top"/><polygon points="40.00,-30.00 44.50,-34.50 44.50,-44.50 40.00,-40.00" class="f-right"/><polygon points="30.00,-30.00 40.00,-30.00 40.00,-40.00 30.00,-40.00" class="f-left"/><polygon points="40.00,-40.00 50.00,-40.00 54.50,-44.50 44.50,-44.50" class="f-top"/><polygon points="50.00,-30.00 54.50,-34.50 54.50,-44.50 50.00,-40.00" class="f-right"/><polygon points="40.00,-30.00 50.00,-30.00 50.00,-40.00 40.00,-40.00" class="f-left"/><polygon points="20.00,-30.00 30.00,-30.00 34.50,-34.50 24.50,-34.50" class="f-top"/><polygon points="30.00,-20.00 34.50,-24.50 34.50,-34.50 30.00,-30.00" class="f-right"/><polygon points="20.00,-20.00 30.00,-20.00 30.00,-30.00 20.00,-30.00" class="f-left"/><polygon points="30.00,-30.00 40.00,-30.00 44.50,-34.50 34.50,-34.50" class="f-top"/><polygon points="40.00,-20.00 44.50,-24.50 44.50,-34.50 40.00,-30.00" class="f-right"/><polygon points="30.00,-20.00 40.00,-20.00 40.00,-30.00 30.00,-30.00" class="f-left"/><polygon points="20.00,-20.00 30.00,-20.00 34.50,-24.50 24.50,-24.50" class="f-top"/><polygon points="30.00,-10.00 34.50,-14.50 34.50,-24.50 30.00,-20.00" class="f-right"/><polygon points="20.00,-10.00 30.00,-10.00 30.00,-20.00 20.00,-20.00" class="f-left"/><polygon points="30.00,-20.00 40.00,-20.00 44.50,-24.50 34.50,-24.50" class="f-top"/><polygon points="40.00,-10.00 44.50,-14.50 44.50,-24.50 40.00,-20.00" class="f-right"/><polygon points="30.00,-10.00 40.00,-10.00 40.00,-20.00 30.00,-20.00" class="f-left"/><polygon points="20.00,-10.00 30.00,-10.00 34.50,-14.50 24.50,-14.50" class="f-top"/><polygon points="30.00,0.00 34.50,-4.50 34.50,-14.50 30.00,-10.00" class="f-right"/><polygon points="20.00,0.00 30.00,0.00 30.00,-10.00 20.00,-10.00" class="f-left"/><polygon points="30.00,-10.00 40.00,-10.00 44.50,-14.50 34.50,-14.50" class="f-top"/><polygon points="40.00,0.00 44.50,-4.50 44.50,-14.50 40.00,-10.00" class="f-right"/><polygon points="30.00,0.00 40.00,0.00 40.00,-10.00 30.00,-10.00" class="f-left"/></svg>Shuzhe Zhang</a>
@@ -36,7 +48,6 @@
     <img class="avatar" src="assets/avatar.jpg" alt="Shuzhe Zhang" width="300" height="400">
     <div>
       <p>I am an M.S. student in Electrical Engineering at Northwestern University, in the Robotics and Autonomous Systems specialization, advised by <a class="link" href="https://skriegman.github.io/sam.html">Sam Kriegman</a> in the <a class="link" href="https://www.xenobot.group">Xenobot Lab</a>. I am also a research intern in the HCI Lab at SIAT, Chinese Academy of Sciences, advised by <a class="link" href="https://people.ucas.ac.cn/~qianyinling">Yinling Qian</a>.</p>
-      <p>My research focuses on robot manipulation, particularly dexterous manipulation.</p>
       <p>I currently work on the co-design of dexterous robot hand morphology and control, with an emphasis on bringing these designs to real hardware. I am also studying world models for precise, long-horizon manipulation, with the goal of learning dynamics and higher-level task structures that support more effective modeling and planning of complex manipulation processes.</p>
       <p>In the long term, I hope to further explore the relationships among robot morphology, dynamics, and control, and contribute to more general and dexterous robotic manipulation.</p>
     </div>
@@ -192,6 +203,32 @@ if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
 }
 </script>
 
+<script>
+(function(){
+  var v=document.getElementById('hero-video'), cap=document.getElementById('hero-cap');
+  if(!v) return;
+  var wide=window.innerWidth>900;
+  v.src = wide ? 'assets/hero/hands_loop.mp4' : 'assets/hero/hands_loop_720.mp4';
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { v.autoplay=false; v.removeAttribute('autoplay'); v.pause(); }
+  if(!cap) return;
+  var segs=[
+    [0,     'Sixteen evolved hands, each picking up a different object.'],
+    [6.75,  'In-hand rotation across twelve evolved morphologies.'],
+    [14.25, 'A four-fingered design turning objects in place.'],
+    [21.75, 'An evolved hand hanging from a bar while holding a padlock.'],
+    [26.15, 'Retrieving a block from inside a tube.'],
+    [33.65, 'Sixteen evolved hands, each picking up a different object.']
+  ];
+  var cur=-1;
+  function idx(t){var i=0;for(var k=0;k<segs.length;k++){if(t>=segs[k][0])i=k;}return i;}
+  cap.textContent=segs[0][1];
+  v.addEventListener('timeupdate',function(){
+    var i=idx(v.currentTime); if(i===cur) return; cur=i;
+    cap.classList.add('is-fading');
+    setTimeout(function(){cap.textContent=segs[i][1];cap.classList.remove('is-fading');},400);
+  });
+})();
+</script>
 <!-- Cloudflare Web Analytics -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "bf125b1ca3aa4af48629b1080edcd780"}'></script>
 <!-- End Cloudflare Web Analytics -->
