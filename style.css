@@ -189,9 +189,14 @@ html, body { overflow-x: hidden; }   /* nothing should scroll the page sideways 
 .content-column .intro { margin-top: .5rem; }
 
 @media (max-width: 900px) {
-  .video-rail { position: relative; inset: auto; height: 58vh; }
-  .video-scrim { background: linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.7)); }
-  .hero-intro { position: absolute; top: auto; bottom: 1.25rem; left: 1.1rem; right: 1.1rem; transform: none; max-width: none; }
-  .hero-name, .hero-cap { display: none; }   /* the wordmark follows immediately below; the caption has no room */
-  .content-column { width: 100%; min-height: 0; box-shadow: none; border-left: 0; }
+  /* phones keep the fixed video underneath; the frosted column rises over it from 58vh */
+  .hero-wrap { position: static; }
+  .video-rail { position: fixed; inset: 0; height: auto; }
+  .video-scrim { background: linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.35) 55%, rgba(0,0,0,.75) 100%); }
+  .hero-intro { position: fixed; top: auto; bottom: calc(42vh + 1.1rem); left: 1.1rem; right: 1.1rem; transform: none; max-width: none; }
+  .hero-name { display: none; }   /* the wordmark sits right below the fold */
+  .content-column { width: 100%; margin-top: 58vh; min-height: 0;
+    backdrop-filter: blur(16px) saturate(1.1); -webkit-backdrop-filter: blur(16px) saturate(1.1);
+    border-left: 0; border-top: 1px solid rgba(255,255,255,.3); border-radius: 14px 14px 0 0;
+    box-shadow: 0 -16px 48px rgba(0,0,0,.25); }
 }
